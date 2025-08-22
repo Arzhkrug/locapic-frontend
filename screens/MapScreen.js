@@ -34,6 +34,7 @@ export default function MapScreen() {
       }
     })();
 
+    console.log("BACKEND URL =>", `${BACKEND_ADDRESS}/places/${user.nickname}`);
     fetch(`${BACKEND_ADDRESS}/places/${user.nickname}`)
       .then((response) => response.json())
       .then((data) => {
