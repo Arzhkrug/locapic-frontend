@@ -17,7 +17,6 @@ const BACKEND_ADDRESS = "https://locapic-backend-sepia-omega.vercel.app";
 export default function MapScreen() {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.value);
-
   const [currentPosition, setCurrentPosition] = useState(null);
   const [tempCoordinates, setTempCoordinates] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
