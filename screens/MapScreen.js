@@ -12,7 +12,7 @@ import { addPlace, importPlaces } from "../reducers/user";
 import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 
-const BACKEND_ADDRESS = "https://locapic-backend-sepia-omega.vercel.app";
+const BACKEND_ADDRESS = "https://locapic-backend-sepia-omega.vercel.app/";
 
 export default function MapScreen() {
   const dispatch = useDispatch();
